@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
+    <title>Browse4Pets</title>
+    <!-- font-awesome link -->
+    <script src="https://kit.fontawesome.com/8dd89b16c5.js" crossorigin="anonymous"></script>
     <!-- DaisyUI + Tailwind link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,18 +14,67 @@
     <style type="text/tailwindcss">
         @theme {
           --color-clifford: #da373d;
+          --color-primary: #FFDC26;
+          --color-primary-light: rgba(255, 220, 38, 0.5);
+          --color-secondary: #F9DF8A;
+          --color-section-bg: #FFF9F4;
+          
         }
       </style>
 </head>
-<body>
-    <header>
 
+<body class="m-10">
+    <header>
+        <!-- navbar section -->
+        <section>
+            <div class="navbar bg-(--color-section-bg)">
+                <div class="navbar-start gap-2">
+                    <img src="assets/logo-header.png" alt="">
+                    <h3>Browse<span>4</span>Pets</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn">Login</button>
+                    <button class="btn">Register</button>
+                </div>
+            </div>
+        </section>
+        <!-- banner section -->
+        <section>
+
+        </section>
     </header>
     <main>
+        <!-- Browse By Categories Section -->
+        <section>
+             <div class="flex flex-wrap gap-5 justify-center">
+                <div class="card bg-(--color-secondary) w-50 h-64 shadow-xl">
+                    <div class="card-body grid grid-row-2 gap-5 place-content-center">
+                        <div class="w-26 h-26 place-content-center bg-white rounded-full">
+                            <img class="mx-auto" src="assets/cat-cartoon.png" alt="">
+                        </div>
+                        <div class="text-center justify-center">
+                            <h2 class="font-bold mb-2 ">Dog</h2>
+                            <p class="items-center">3 items</p>
+                        </div>
 
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
