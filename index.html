@@ -43,8 +43,8 @@
 <body class="font-sora">
     <header>
         <!-- navbar section -->
-        <section>
-            <div class="navbar bg-(--color-section-bg)">
+        <section class="mb-8 md:mb-14">
+            <div class="navbar bg-(--color-section-bg) md:px-16 lg:px-36 lg:mb-20">
                 <!-- navbar start -->
                 <div class="navbar-start gap-2">
                     <img src="assets/logo-header.png" alt="">
@@ -64,27 +64,29 @@
                     <div class="hidden lg:flex place-items-center gap-5">
                         <i class="fa-regular fa-bell"></i>
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <button class="btn btn-outline btn-warning">Login</button>
-                        <button class="btn">Register</button>
+                        <button class="btn bg-transparent border-[--color-primary]">Login</button>
+                        <button class="btn bg-[--color-primary]">Register</button>
                     </div>
                     <div>
-                        <i class="fa-solid fa-bars navbar-end lg:hidden"></i>
+                        <i class="fa-solid fa-bars fa-2xl navbar-end lg:hidden"></i>
                     </div>
                 </div>
             </div>
+            <hr class="border-2 lg:hidden">
+
         </section>
 
         <!-- banner section -->
-        <section class="mx-auto">
-            <div class="container mx-auto">
-                <div class="absolute w-88 md:w-120 lg:w-170 border">
+        <section class="mb-8 md:mb-14">
+            <div class="md:px-16 lg:px-36">
+                <div class="absolute w-88 md:w-120 lg:w-170">
                     <h1 class="font-bold font-adlam mb-4 text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet, <br> Because
                         They Deserve <br> the Bes</h1>
                     <p class="mb-4 lg:text-xl">Discover a world of treats, toys, and essentials handpicked for your
                         furry
                         friends.
                         Shop now and make tails wag with joy!</p>
-                    <button class="btn lg:texl-xl">Fing a pet</button>
+                    <button class="btn lg:texl-xl bg-[--color-primary]">Fing a pet</button>
                 </div>
                 <div>
                     <img src="assets/cat-big.png" alt="">
@@ -94,7 +96,7 @@
     </header>
     <main>
         <!-- Browse By Categories Section -->
-        <section>
+        <section class="mb-8 md:mb-14">
             <div class="flex flex-wrap gap-5 justify-center">
                 <div class="card bg-(--color-secondary) w-50 h-64 shadow-xl">
                     <div class="card-body grid grid-row-2 gap-5 place-content-center">
@@ -112,9 +114,9 @@
             </div>
         </section>
         <!-- Trending Pet Products section -->
-         <section class="h-200 bg-(--color-section-bg)">
-
-         </section>
+        <section class="h-200 bg-(--color-section-bg)">
+            <p class="text-xl text-red-700 md:text-4xl md:text-green-500 lg:text-6xl lg:text-blue-700">experimental</p>
+        </section>
     </main>
     <footer>
 
