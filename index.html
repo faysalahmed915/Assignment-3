@@ -78,7 +78,7 @@
         </section>
 
         <!-- banner section -->
-        <section class="mb-8 md:mb-14 border-2">
+        <section class="mb-8 md:mb-14">
             <div class="px-2 md:px-16 xl:px-36">
                 <div class="absolute w-88 md:w-120 lg:w-170">
                     <h1 class="font-bold font-adlam mb-4 lg:mb-10 text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet,
@@ -129,22 +129,28 @@
             <div class="px-2 md:px-16 xl:px-36">
                 <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Trending Pet Products</h3>
                 <!-- card container of this section -->
-                <div class="lg:flex gap-10">
+                <div class="grid lg:grid lg:grid-cols-[1fr_1.8fr] gap-8">
                     <!-- hero card -->
-                    <div class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 w-[358px] lg:w-[424px] h-[340px] lg:h-[402px]">
+
+                    <!-- <div
+                        class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 w-[358px] lg:w-[424px] h-[340px] lg:h-[402px]"> -->
+                    <div
+                        class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 max-w-[536px] max-h-[402px]">
                         <div>
                             <h4 class="font-bold text-2xl lg:text-3xl mb-4 lg:mb-8 lg:mb-11">T-Shirt For Dogs</h4>
-                            <p class="w-[50%] lg:w-[80%] mb-5">Discover a world of treats, toys, and essentials handpicked for</p>
-                            <button class="btn bg-white">Shop Now</button>
+                            <p class="w-[50%] lg:w-[80%]">Discover a world of treats, toys, and essentials
+                                handpicked for</p>
+                            <button class="btn bg-white my-8">Shop Now</button>
                         </div>
                         <div class="absolute right-0 bottom-0">
                             <img class="" src="assets/cute-pet-small.png" alt="">
                         </div>
                     </div>
-                    <!-- rating cards -->
-                    <div>
-                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle">
-                            <div class="rounded-2 place-content-center bg-(--color-section-bg)">
+                    <!-- rating cards container -->
+                    <div class="flex flex-wrap gap-5">
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
                                 <img src="assets/pet-couch.png" alt="">
                             </div>
                             <div class="place-content-center">
@@ -152,7 +158,105 @@
                                     <i class="fa-solid fa-star text-yellow-400"></i>
                                     <p>4.5</p>
                                 </div>
-                                <p>Pet Bed</p>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                        <!-- individual card -->
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle p-4">
+                            <div class="rounded-md place-content-center bg-(--color-section-bg) p-4">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p class="text-xl font-bold my-1 mr-10">Pet Bed</p>
                                 <p>$39.99</p>
                             </div>
                         </div>
