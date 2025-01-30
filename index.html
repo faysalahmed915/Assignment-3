@@ -33,6 +33,7 @@
           --color-primary-light: rgba(255, 220, 38, 0.5);
           --color-secondary: #F9DF8A;
           --color-section-bg: #FFF9F4;
+          --color-chinese-black: #111111;
           /* custom fonts */
           --font-adlam: "ADLaM Display", serif;
           --font-sora: "Sora", serif;
@@ -44,7 +45,7 @@
     <header>
         <!-- navbar section -->
         <section class="mb-8 md:mb-14">
-            <div class="navbar bg-(--color-section-bg) md:px-16 lg:px-36 lg:mb-20">
+            <div class="navbar bg-(--color-section-bg) px-2 md:px-16 xl:px-36 lg:mb-20">
                 <!-- navbar start -->
                 <div class="navbar-start gap-2">
                     <img src="assets/logo-header.png" alt="">
@@ -72,23 +73,26 @@
                     </div>
                 </div>
             </div>
-            <hr class="border-2 lg:hidden">
+            <hr class="border-2 mb-4 lg:hidden">
 
         </section>
 
         <!-- banner section -->
-        <section class="mb-8 md:mb-14">
-            <div class="md:px-16 lg:px-36">
+        <section class="mb-8 md:mb-14 border-2">
+            <div class="px-2 md:px-16 xl:px-36">
                 <div class="absolute w-88 md:w-120 lg:w-170">
-                    <h1 class="font-bold font-adlam mb-4 text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet, <br> Because
-                        They Deserve <br> the Bes</h1>
-                    <p class="mb-4 lg:text-xl">Discover a world of treats, toys, and essentials handpicked for your
+                    <h1 class="font-bold font-adlam mb-4 lg:mb-10 text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet,
+                        <br> Because
+                        They Deserve <br> the Bes
+                    </h1>
+                    <p class="mb-4 lg:mb-10 text-sm xl:text-xl">Discover a world of treats, toys, and essentials
+                        handpicked for your
                         furry
                         friends.
                         Shop now and make tails wag with joy!</p>
-                    <button class="btn lg:texl-xl bg-[--color-primary]">Fing a pet</button>
+                    <button class="btn xl:text-xl bg-[--color-primary]">Fing a pet</button>
                 </div>
-                <div>
+                <div class="place-items-end">
                     <img src="assets/cat-big.png" alt="">
                 </div>
             </div>
@@ -97,25 +101,65 @@
     <main>
         <!-- Browse By Categories Section -->
         <section class="mb-8 md:mb-14">
-            <div class="flex flex-wrap gap-5 justify-center">
-                <div class="card bg-(--color-secondary) w-50 h-64 shadow-xl">
-                    <div class="card-body grid grid-row-2 gap-5 place-content-center">
-                        <div class="w-26 h-26 place-content-center bg-white rounded-full">
-                            <img class="mx-auto" src="assets/cat-cartoon.png" alt="">
-                        </div>
-                        <div class="text-center justify-center">
-                            <h2 class="font-bold mb-2 ">Dog</h2>
-                            <p class="items-center">3 items</p>
-                        </div>
+            <!-- section container -->
+            <div class="px-2 md:px-16 xl:px-36">
+                <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Browse By Categories</h3>
+                <!-- card container of this section -->
+                <div class="flex flex-wrap gap-5 justify-center">
+                    <div class="card bg-(--color-secondary) w-50 h-64 shadow-xl">
+                        <div class="card-body grid grid-row-2 gap-5 place-content-center">
+                            <div class="w-26 h-26 place-content-center bg-white rounded-full">
+                                <img class="mx-auto" src="assets/cat-cartoon.png" alt="">
+                            </div>
+                            <div class="text-center justify-center">
+                                <h2 class="font-bold mb-2 ">Dog</h2>
+                                <p class="items-center">3 items</p>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-
             </div>
         </section>
+
+
         <!-- Trending Pet Products section -->
         <section class="h-200 bg-(--color-section-bg)">
-            <p class="text-xl text-red-700 md:text-4xl md:text-green-500 lg:text-6xl lg:text-blue-700">experimental</p>
+            <!-- section container -->
+            <div class="px-2 md:px-16 xl:px-36">
+                <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Trending Pet Products</h3>
+                <!-- card container of this section -->
+                <div class="lg:flex gap-10">
+                    <!-- hero card -->
+                    <div class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 w-[358px] lg:w-[424px] h-[340px] lg:h-[402px]">
+                        <div>
+                            <h4 class="font-bold text-2xl lg:text-3xl mb-4 lg:mb-8 lg:mb-11">T-Shirt For Dogs</h4>
+                            <p class="w-[50%] lg:w-[80%] mb-5">Discover a world of treats, toys, and essentials handpicked for</p>
+                            <button class="btn bg-white">Shop Now</button>
+                        </div>
+                        <div class="absolute right-0 bottom-0">
+                            <img class="" src="assets/cute-pet-small.png" alt="">
+                        </div>
+                    </div>
+                    <!-- rating cards -->
+                    <div>
+                        <div class="bg-white border-2 rounded-md flex gap-5 align-middle">
+                            <div class="rounded-2 place-content-center bg-(--color-section-bg)">
+                                <img src="assets/pet-couch.png" alt="">
+                            </div>
+                            <div class="place-content-center">
+                                <div class="flex gap-2">
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                    <p>4.5</p>
+                                </div>
+                                <p>Pet Bed</p>
+                                <p>$39.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
