@@ -5,57 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
+    <!-- fav-icon -->
+    <link rel="icon" type="image/x-icon" href="assets/logo-header.png">
+
+    <!-- google font cdn -->
+    <!-- font-adlam link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- font sora link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
     <!-- font-awesome link -->
     <script src="https://kit.fontawesome.com/8dd89b16c5.js" crossorigin="anonymous"></script>
-    <!-- DaisyUI + Tailwind link -->
+    <!-- DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- custom styles added -->
     <style type="text/tailwindcss">
         @theme {
-          --color-clifford: #da373d;
+            /* custom colors */
           --color-primary: #FFDC26;
           --color-primary-light: rgba(255, 220, 38, 0.5);
           --color-secondary: #F9DF8A;
           --color-section-bg: #FFF9F4;
-          
+          /* custom fonts */
+          --font-adlam: "ADLaM Display", serif;
+          --font-sora: "Sora", serif;
         }
       </style>
 </head>
 
-<body class="m-10">
+<body class="font-sora">
     <header>
         <!-- navbar section -->
         <section>
             <div class="navbar bg-(--color-section-bg)">
+                <!-- navbar start -->
                 <div class="navbar-start gap-2">
                     <img src="assets/logo-header.png" alt="">
-                    <h3>Browse<span>4</span>Pets</h3>
+                    <h3 class="hidden lg:block text-2xl font-medium">Browse<span
+                            class="text-(--color-primary)">4</span>Pets</h3>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <!-- navbar center -->
+                <div class="navbar-center hidden lg:flex text-xl">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Find a pet</a></li>
                         <li><a>Breeds</a></li>
                         <li><a>Contact us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-3">
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <button class="btn">Login</button>
-                    <button class="btn">Register</button>
+                <!-- navbar end -->
+                <div class="navbar-end">
+                    <div class="hidden lg:flex place-items-center gap-5">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <button class="btn btn-outline btn-warning">Login</button>
+                        <button class="btn">Register</button>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-bars navbar-end lg:hidden"></i>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- banner section -->
-        <section>
 
+        <!-- banner section -->
+        <section class="mx-auto">
+            <div class="container mx-auto">
+                <div class="absolute w-88 md:w-120 lg:w-170 border">
+                    <h1 class="font-bold font-adlam mb-4 text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet, <br> Because
+                        They Deserve <br> the Bes</h1>
+                    <p class="mb-4 lg:text-xl">Discover a world of treats, toys, and essentials handpicked for your
+                        furry
+                        friends.
+                        Shop now and make tails wag with joy!</p>
+                    <button class="btn lg:texl-xl">Fing a pet</button>
+                </div>
+                <div>
+                    <img src="assets/cat-big.png" alt="">
+                </div>
+            </div>
         </section>
     </header>
     <main>
         <!-- Browse By Categories Section -->
         <section>
-             <div class="flex flex-wrap gap-5 justify-center">
+            <div class="flex flex-wrap gap-5 justify-center">
                 <div class="card bg-(--color-secondary) w-50 h-64 shadow-xl">
                     <div class="card-body grid grid-row-2 gap-5 place-content-center">
                         <div class="w-26 h-26 place-content-center bg-white rounded-full">
@@ -68,9 +108,13 @@
 
                     </div>
                 </div>
-                
+
             </div>
         </section>
+        <!-- Trending Pet Products section -->
+         <section class="h-200 bg-(--color-section-bg)">
+
+         </section>
     </main>
     <footer>
 
