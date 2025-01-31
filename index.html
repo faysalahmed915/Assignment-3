@@ -42,7 +42,7 @@
 </head>
 
 <body class="font-sora">
-    <header>
+    <header hidden>
         <!-- navbar section -->
         <section class="mb-8 md:mb-14">
             <div class="navbar bg-(--color-section-bg) px-2 md:px-16 xl:px-36 lg:mb-20">
@@ -124,23 +124,19 @@
 
 
         <!-- Trending Pet Products section -->
-        <section class="h-200 bg-(--color-section-bg)">
+        <section class="bg-(--color-section-bg) py-36 px-2 md:px-16 xl:px-36">
             <!-- section container -->
-            <div class="px-2 md:px-16 xl:px-36">
+            <!-- <div class="px-2 md:px-16 xl:px-36"> -->
                 <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Trending Pet Products</h3>
                 <!-- card container of this section -->
                 <div class="grid lg:grid lg:grid-cols-[1fr_1.8fr] gap-8">
                     <!-- hero card -->
-
-                    <!-- <div
-                        class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 w-[358px] lg:w-[424px] h-[340px] lg:h-[402px]"> -->
-                    <div
-                        class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 max-w-[536px] max-h-[402px]">
+                    <div class="relative rounded-lg bg-(--color-secondary) pl-8 pt-12 max-w-[536px] max-h-[402px]">
                         <div>
-                            <h4 class="font-bold text-2xl lg:text-3xl mb-4 lg:mb-8 lg:mb-11">T-Shirt For Dogs</h4>
-                            <p class="w-[50%] lg:w-[80%]">Discover a world of treats, toys, and essentials
+                            <h4 class="font-adlam font-bold text-2xl lg:text-3xl my-4 lg:mb-8 lg:mb-11">T-Shirt For Dogs</h4>
+                            <p class="w-[60%] lg:w-[80%]">Discover a world of treats, toys, and essentials
                                 handpicked for</p>
-                            <button class="btn bg-white my-8">Shop Now</button>
+                            <button class="btn bg-white my-10">Shop Now</button>
                         </div>
                         <div class="absolute right-0 bottom-0">
                             <img class="" src="assets/cute-pet-small.png" alt="">
@@ -262,6 +258,46 @@
                         </div>
                     </div>
                 </div>
+            <!-- </div> -->         
+        </section>
+        <!-- Everyday low Price section -->
+        <section class="py-36 px-2 md:px-16 xl:px-36">
+            <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Everyday low Price</h3>
+            <div class="flex flex-wrap">
+                <!-- larger card -->
+                <div class="relative">
+                    <div class="rounded-lg bg-(--color-secondary) pl-24 hidden lg:flex">
+                        <div class="py-12">
+                            <p>Under Price</p>
+                            <h4 class="font-adlam font-bold text-2xl lg:text-3xl my-4 lg:mb-8 lg:mb-11">T-Shirt For Dogs</h4>
+                            <p class="font-adlam font-bold">(Easy Hair Removal)</p>
+                            <p class="font-adlam font-bold">$7.99</p>
+                        </div>
+                        <div class="w-[80%] h-full absolute right-0 top-0">
+                            <img src="assets/cute-dog-mid.png" alt="">
+                        </div>
+                </div>
+                </div>
+                <!-- extra card of larger card for small screen to reduce complexicity. it may increase the load on browser -->
+                 <div class="relative rounded-2xl bg-red-200 w-[357px] h-[335px] md:hidden">
+                    <div class="p-10">
+                        <h4 class="font-adlam font-bold text-2xl lg:text-3xl my-4 lg:mb-8 lg:mb-11">Pet Grooming Mitt</h4>
+                        <p>$7.99</p>
+                    </div>
+                    <div class="absolute right-0 bottom-0 w-[60%]">
+                        <img src="assets/cute-dog-mid.png" alt="">
+                    </div>
+                 </div>
+                <!-- smaller card -->
+                <div class="relative rounded-2xl bg-red-200 w-[357px] lg:w-[512px] h-[480px]">
+                    <div class="p-10">
+                        <h4 class="font-adlam font-bold text-2xl lg:text-3xl my-4 lg:mb-8 lg:mb-11">Pet Grooming Mitt</h4>
+                        <p>$7.99</p>
+                    </div>
+                    <div class="absolute right-0 bottom-0 w-[60%]">
+                        <img src="assets/cute-pet-mid.png" alt="">
+                    </div>
+                 </div>
             </div>
 
         </section>
