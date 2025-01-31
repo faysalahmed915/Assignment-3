@@ -42,7 +42,7 @@
 </head>
 
 <body class="font-sora">
-    <header>
+    <header hidden>
         <!-- navbar section -->
         <section class="mb-8 md:mb-14">
             <div class="navbar bg-(--color-section-bg) px-2 md:px-16 xl:px-36 lg:mb-20">
@@ -445,14 +445,16 @@
 
 
     </main>
-    <footer class="relative">
+    <footer class="relative bg-(--color-secondary) px-2 md:px-16 xl:px-36 mt-80 lg:mt-52">
+
+
         <!-- Get Pawsome News! -->
-        <section class="relative py-36 px-2 md:px-16 xl:px-36 absolute">
-            <div class="bg-(--color-section-bg) rounded-xl justify-self-center p-10 lg:flex lg:justify-around gap-10 w-full">
+        <section class="relative bottom-80 lg:bottom-56">
+            <div class="bg-(--color-section-bg) rounded-xl justify-self-center p-10 lg:flex lg:justify-evenly gap-10 w-full">
                 <div class="justify-self-center">
                     <img src="assets/cute-pet-mid.png" alt="">
                 </div>
-                <div class="text-center lg:text-left">
+                <div class="text-center lg:text-left lg:content-center">
                     <h4 class="font-adlam font-bold text-2xl lg:text-3xl my-4 lg:mb-8 lg:mb-11">Get Pawsome News!</h4>
                     <p>Exclusive training tips, ticks, product deals and more.</p>
                     <div class="my-4">
@@ -463,20 +465,22 @@
             </div>
         </section>
 
+
+        
         <!-- footer section here -->
 
-        <section class="bg-(--color-secondary) px-2 md:px-16 xl:px-36 pt-[500px] pb-[200px] lg:flex relative">
+        <section class="pb-10 grid lg:grid-cols-3 items-end">
             <div>
-                <div>
+                <div class="flex items-center gap-3">
                     <img src="assets/logo-footer.png" alt="">
-                    <h3>Browse Pets</h3>
+                    <h3 class="font-bold text-xl lg:text-2xl">Browse Pets</h3>
                 </div>
-                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                <p class="">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
             </div>
             <div>
                 <ul>
                     <li><a href="">Find a pet</a></li>
-                    <li><a href="">Breed</a></li>
+                    <li class="my-6"><a href="">Breed</a></li>
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
