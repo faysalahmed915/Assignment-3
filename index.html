@@ -27,6 +27,9 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- custom styles added -->
     <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
         @theme {
             /* custom colors */
           --color-primary: #FFDC26;
@@ -85,14 +88,26 @@
                         <br> Because
                         They Deserve <br> the Bes
                     </h1>
-                    <p class="mb-4 lg:mb-10 text-sm xl:text-xl">Discover a world of treats, toys, and essentials
+                    <p class="mb-6 lg:mb-12 text-sm xl:text-xl">Discover a world of treats, toys, and essentials
                         handpicked for your
                         furry
                         friends.
                         Shop now and make tails wag with joy!</p>
-                    <button class="btn xl:text-xl bg-[--color-primary]">Fing a Pet<span class="animate-ping"><i
-                                class="fa-regular fa-bell"></i></span></button>
+
+                    <!-- <button class="btn xl:text-xl bg-[--color-primary]">Fing a Pet<span class="animate-ping"><i
+                                class="fa-regular fa-bell"></i></span></button> -->
+
+                    <!-- button animation -->
+
+                    <button type="button"
+                        class="animate-bounce transtion group flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500 p-[1.5px] text-white duration-300 hover:bg-gradient-to-l hover:shadow-2xl hover:shadow-purple-600/30">
+                        <div
+                            class="font-adlam text-xl lg:text-3xl py-2 px-6 flex h-full w-full items-center justify-center rounded-full bg-gray-900 transition duration-300 ease-in-out group-hover:bg-gradient-to-br group-hover:from-gray-700 group-hover:to-gray-900 group-hover:transition group-hover:duration-300 group-hover:ease-in-out">
+                            Fing a Pet</div>
+                    </button>
+
                 </div>
+                <div class="h-24 sm:hidden"></div>
                 <div class="place-items-end">
                     <img src="assets/cat-big.png" alt="">
                 </div>
@@ -106,7 +121,8 @@
             <h3 class="font-adlam font-bold text-2xl lg:text-4xl mb-8 lg:mb-11">Our Best Collections</h3>
 
             <!-- slide show -->
-            <div class="carousel carousel-center bg-[linear-gradient(240deg,_#FFF9F5,_#F9DF8A)] rounded-box max-w-full space-x-4 px-8 pb-8">
+            <div
+                class="carousel carousel-center bg-[linear-gradient(240deg,_#FFF9F5,_#F9DF8A)] rounded-box max-w-full space-x-4 px-8 pb-8">
                 <div class="carousel-item flex flex-col">
                     <h6 class="font-bold text-3xl py-8 text-center drop-shadow-md">Papa looking for kids</h6>
                     <div class="w-lg">
@@ -540,7 +556,8 @@
                     <img src="assets/logo-footer.png" alt="">
                     <h3 class="font-bold text-xl lg:text-2xl">Browse Pets</h3>
                 </div>
-                <p class="lg:text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry friends</p>
+                <p class="lg:text-xl">Discover a world of treats, toys, and <br> essentials handpicked for your furry
+                    friends</p>
             </div>
             <div class="lg:justify-items-center lg:text-xl">
                 <ul>
